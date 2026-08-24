@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sample inbound ORDERS05 that failed with status 51.
+  Failure: sold-to partner CUST-OLD-12345 is not in the receiving SAP customer master.
+
+  This is the kind of payload iDoc Self-Heal would ingest.
+-->
+<ORDERS05>
+  <IDOC BEGIN="1">
+    <EDI_DC40 SEGMENT="1">
+      <TABNAM>EDI_DC40</TABNAM>
+      <MANDT>100</MANDT>
+      <DOCNUM>0000000123456789</DOCNUM>
+      <DOCREL>750</DOCREL>
+      <STATUS>51</STATUS>
+      <DIRECT>2</DIRECT>
+      <IDOCTYP>ORDERS05</IDOCTYP>
+      <CIMTYP></CIMTYP>
+      <MESTYP>ORDERS</MESTYP>
+      <MESCOD></MESCOD>
+      <MESFCT></MESFCT>
+      <SNDPOR>SAPECCEU</SNDPOR>
+      <SNDPRT>LS</SNDPRT>
+      <SNDPRN>ELECTROLUX_EU</SNDPRN>
+      <RCVPOR>SAPECCUS</RCVPOR>
+      <RCVPRT>LS</RCVPRT>
+      <RCVPRN>ELECTROLUX_US</RCVPRN>
+      <CREDAT>20260820</CREDAT>
+      <CRETIM>161243</CRETIM>
+      <SERIAL>20260820161243</SERIAL>
+    </EDI_DC40>
+
+    <E1EDK01 SEGMENT="1">
+      <ACTION>004</ACTION>
+      <CURCY>USD</CURCY>
+      <WKURS>1.00000</WKURS>
+      <ZTERM>NT30</ZTERM>
+      <BELNR>4500098765</BELNR>
+      <VSART>01</VSART>
+      <RECIPNT_NO>CUST-OLD-12345</RECIPNT_NO>
+    </E1EDK01>
+
+    <E1EDK14 SEGMENT="1">
+      <QUALF>008</QUALF>
+      <ORGID>US00</ORGID>
+    </E1EDK14>
+    <E1EDK14 SEGMENT="1">
+      <QUALF>007</QUALF>
+      <ORGID>01</ORGID>
+    </E1EDK14>
+    <E1EDK14 SEGMENT="1">
+      <QUALF>006</QUALF>
+      <ORGID>01</ORGID>
+    </E1EDK14>
+
+    <E1EDK03 SEGMENT="1">
+      <IDDAT>012</IDDAT>
+      <DATUM>20260820</DATUM>
+    </E1EDK03>
+    <E1EDK03 SEGMENT="1">
+      <IDDAT>002</IDDAT>
+      <DATUM>20260827</DATUM>
+    </E1EDK03>
+
+    <E1EDKA1 SEGMENT="1">
+      <PARVW>AG</PARVW>
+      <PARTN>CUST-OLD-12345</PARTN>
+      <NAME1>Electrolux EU Intercompany Sold-To</NAME1>
+      <STRAS>S:t Goransgatan 143</STRAS>
+      <ORT01>Stockholm</ORT01>
+      <PSTLZ>11217</PSTLZ>
+      <LAND1>SE</LAND1>
+      <SPRAS>E</SPRAS>
+    </E1EDKA1>
+
+    <E1EDKA1 SEGMENT="1">
+      <PARVW>WE</PARVW>
+      <PARTN>0006000521</PARTN>
+      <NAME1>Electrolux US Plant Charlotte</NAME1>
+      <STRAS>4100 South Blvd</STRAS>
+      <ORT01>Charlotte</ORT01>
+      <PSTLZ>28209</PSTLZ>
+      <LAND1>US</LAND1>
+    </E1EDKA1>
+
+    <E1EDKA1 SEGMENT="1">
+      <PARVW>RE</PARVW>
+      <PARTN>CUST-OLD-12345</PARTN>
+      <NAME1>Electrolux EU Intercompany Bill-To</NAME1>
+      <ORT01>Stockholm</ORT01>
+      <LAND1>SE</LAND1>
+    </E1EDKA1>
+
+    <E1EDP01 SEGMENT="1">
+      <POSEX>000010</POSEX>
+      <ACTION>001</ACTION>
+      <MENGE>10.000</MENGE>
+      <MENEE>EA</MENEE>
+      <VPREI>249.00</VPREI>
+      <PEINH>1</PEINH>
+      <NETWR>2490.00</NETWR>
+      <CURCY>USD</CURCY>
+      <WERKS>US01</WERKS>
+      <E1EDP19 SEGMENT="1">
+        <QUALF>002</QUALF>
+        <IDTNR>ELX-FRIDGE-900</IDTNR>
+        <KTEXT>French Door Refrigerator 900</KTEXT>
+      </E1EDP19>
+    </E1EDP01>
+
+    <E1EDP01 SEGMENT="1">
+      <POSEX>000020</POSEX>
+      <ACTION>001</ACTION>
+      <MENGE>5.000</MENGE>
+      <MENEE>EA</MENEE>
+      <VPREI>89.50</VPREI>
+      <NETWR>447.50</NETWR>
+      <CURCY>USD</CURCY>
+      <WERKS>US01</WERKS>
+      <E1EDP19 SEGMENT="1">
+        <QUALF>002</QUALF>
+        <IDTNR>ELX-FILTER-12</IDTNR>
+        <KTEXT>Water filter pack</KTEXT>
+      </E1EDP19>
+    </E1EDP01>
+  </IDOC>
+</ORDERS05>

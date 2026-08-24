@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sample inbound DEBMAS06 — customer master create.
+  This is the IDoc family behind SAP ICC "Intercompany customer creation"
+  (dashboard incidents such as INC0023783 creating customer 0006000521).
+
+  MSGFN 009 = original / create.
+-->
+<DEBMAS06>
+  <IDOC BEGIN="1">
+    <EDI_DC40 SEGMENT="1">
+      <TABNAM>EDI_DC40</TABNAM>
+      <MANDT>100</MANDT>
+      <DOCNUM>0000000555000001</DOCNUM>
+      <DOCREL>750</DOCREL>
+      <STATUS>53</STATUS>
+      <DIRECT>2</DIRECT>
+      <IDOCTYP>DEBMAS06</IDOCTYP>
+      <MESTYP>DEBMAS</MESTYP>
+      <SNDPOR>SAPECCEU</SNDPOR>
+      <SNDPRT>LS</SNDPRT>
+      <SNDPRN>ELECTROLUX_EU</SNDPRN>
+      <RCVPOR>SAPECCUS</RCVPOR>
+      <RCVPRT>LS</RCVPRT>
+      <RCVPRN>ELECTROLUX_US</RCVPRN>
+      <CREDAT>20260818</CREDAT>
+      <CRETIM>153002</CRETIM>
+    </EDI_DC40>
+
+    <E1KNA1M SEGMENT="1">
+      <MSGFN>009</MSGFN>
+      <KUNNR>0006000521</KUNNR>
+      <ANRED>Company</ANRED>
+      <KTOKD>ZICC</KTOKD>
+      <LAND1>US</LAND1>
+      <NAME1>Electrolux US Intercompany Customer</NAME1>
+      <ORT01>Charlotte</ORT01>
+      <PSTLZ>28209</PSTLZ>
+      <REGIO>NC</REGIO>
+      <STRAS>4100 South Blvd</STRAS>
+      <TELF1>7045550100</TELF1>
+      <SPRAS>E</SPRAS>
+      <LZONE>0000000001</LZONE>
+      <BRSCH>0001</BRSCH>
+      <KUKLA>01</KUKLA>
+    </E1KNA1M>
+
+    <E1KNB1M SEGMENT="1">
+      <MSGFN>009</MSGFN>
+      <BUKRS>US01</BUKRS>
+      <AKONT>0014000000</AKONT>
+      <ZTERM>NT30</ZTERM>
+      <ZWELS>C</ZWELS>
+    </E1KNB1M>
+
+    <E1KNVVM SEGMENT="1">
+      <MSGFN>009</MSGFN>
+      <VKORG>US00</VKORG>
+      <VTWEG>01</VTWEG>
+      <SPART>01</SPART>
+      <KALKS>1</KALKS>
+      <KDGRP>01</KDGRP>
+      <WAERS>USD</WAERS>
+      <VSBED>01</VSBED>
+      <VWERK>US01</VWERK>
+      <ZTERM>NT30</ZTERM>
+    </E1KNVVM>
+  </IDOC>
+</DEBMAS06>
