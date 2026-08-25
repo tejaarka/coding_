@@ -1,0 +1,80 @@
+{
+  "customers": {
+    "CUST-OLD-12345": {
+      "mapped_to": "0006000888",
+      "name": "Electrolux EU Intercompany Sold-To",
+      "land1": "SE",
+      "exists_in_receiver": false,
+      "note": "Pre-migration number. Master mapping exists."
+    },
+    "0006000888": {
+      "mapped_to": "0006000888",
+      "name": "Electrolux EU Intercompany Sold-To (new)",
+      "land1": "SE",
+      "exists_in_receiver": true
+    },
+    "0006000521": {
+      "mapped_to": "0006000521",
+      "name": "Electrolux US Plant Charlotte",
+      "land1": "US",
+      "exists_in_receiver": true
+    },
+    "SHIP-BAD-0001": {
+      "mapped_to": "0006000521",
+      "name": "Unknown ship-to alias",
+      "land1": "US",
+      "exists_in_receiver": false
+    },
+    "0006000999": {
+      "mapped_to": "0006000999",
+      "name": "Ghost customer — do not use",
+      "land1": "US",
+      "exists_in_receiver": false
+    }
+  },
+  "vendors": {
+    "0000035703": {
+      "name": "Electrolux EU Billing Entity",
+      "company_codes": ["EU01"],
+      "note": "Not extended to US01 — VENDOR_COMPANY_CODE case"
+    }
+  },
+  "materials": {
+    "ELX-FRIDGE-900": {
+      "exists": true,
+      "menee": "EA",
+      "plants": ["US01"]
+    },
+    "ELX-FILTER-12": {
+      "exists": true,
+      "menee": "EA",
+      "plants": ["US01"]
+    },
+    "ELX-FRDGE-900": {
+      "exists": false,
+      "mapped_to": "ELX-FRIDGE-900",
+      "note": "Typo material in dump"
+    },
+    "ZZ-UNKNOWN-1": {
+      "exists": false,
+      "mapped_to": null
+    }
+  },
+  "countries": {
+    "SE": { "valid": true, "name": "Sweden" },
+    "US": { "valid": true, "name": "United States" },
+    "DE": { "valid": true, "name": "Germany" },
+    "XX": { "valid": false, "mapped_to": "SE", "note": "Garbage country code seen in failed IDocs" },
+    "SWE": { "valid": false, "mapped_to": "SE", "note": "ISO-3 sent where SAP expects LAND1 CHAR2" }
+  },
+  "uom_map": {
+    "PC": "EA",
+    "PCE": "EA",
+    "EA": "EA"
+  },
+  "plants": {
+    "US01": { "valid": true },
+    "EU01": { "valid": true },
+    "9999": { "valid": false, "mapped_to": "US01" }
+  }
+}

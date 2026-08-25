@@ -1,0 +1,110 @@
+{
+  "disclaimer": "Placeholder categories for learning only. Replace when Electrolux shares the official list.",
+  "categories": [
+    {
+      "id": "PARTNER_INVALID",
+      "sector": "logistics",
+      "healable": true,
+      "typical_segment": "E1EDKA1",
+      "typical_field": "PARTN",
+      "keywords": ["customer", "sold-to", "partner", "not found", "CUST-OLD"]
+    },
+    {
+      "id": "SHIP_TO_NOT_FOUND",
+      "sector": "logistics",
+      "healable": true,
+      "typical_segment": "E1EDKA1",
+      "typical_field": "PARTN",
+      "parvw": "WE",
+      "keywords": ["ship-to", "ship to", "warenempfänger"]
+    },
+    {
+      "id": "COUNTRY_CODE",
+      "sector": "logistics",
+      "healable": true,
+      "typical_segment": "E1EDKA1",
+      "typical_field": "LAND1",
+      "keywords": ["country", "land1", "invalid country"]
+    },
+    {
+      "id": "DELIVERY_DATE",
+      "sector": "logistics",
+      "healable": true,
+      "typical_segment": "E1EDK03",
+      "typical_field": "DATUM",
+      "keywords": ["delivery date", "iddat", "date"]
+    },
+    {
+      "id": "MATERIAL_MISSING",
+      "sector": "manufacturing",
+      "healable": true,
+      "typical_segment": "E1EDP19",
+      "typical_field": "IDTNR",
+      "keywords": ["material", "idtnr", "not exist"]
+    },
+    {
+      "id": "UOM_MISMATCH",
+      "sector": "manufacturing",
+      "healable": true,
+      "typical_segment": "E1EDP01",
+      "typical_field": "MENEE",
+      "keywords": ["unit of measure", "uom", "pc", "ea", "menee"]
+    },
+    {
+      "id": "PLANT_INVALID",
+      "sector": "manufacturing",
+      "healable": true,
+      "typical_segment": "E1EDP01",
+      "typical_field": "WERKS",
+      "keywords": ["plant", "werks"]
+    },
+    {
+      "id": "PO_REFERENCE",
+      "sector": "finance",
+      "healable": false,
+      "typical_segment": "E1EDK02",
+      "typical_field": "BELNR",
+      "keywords": ["purchase order", "po reference", "belnr"]
+    },
+    {
+      "id": "INVOICE_AMOUNT",
+      "sector": "finance",
+      "healable": false,
+      "typical_segment": "E1EDP01",
+      "typical_field": "NETWR",
+      "keywords": ["amount", "netwr", "mismatch", "price"]
+    },
+    {
+      "id": "VENDOR_COMPANY_CODE",
+      "sector": "finance",
+      "healable": true,
+      "typical_segment": "E1EDKA1",
+      "typical_field": "LIFNR",
+      "keywords": ["vendor", "company code", "lifnr"]
+    },
+    {
+      "id": "INVALID_REFERENCE",
+      "sector": "master_data",
+      "healable": true,
+      "typical_segment": "E1KNA1M",
+      "typical_field": "KUNNR",
+      "keywords": ["invalid reference", "customer id", "kunnr", "icc"]
+    },
+    {
+      "id": "PARTNER_PROFILE",
+      "sector": "basis",
+      "healable": false,
+      "typical_segment": "EDI_DC40",
+      "typical_field": null,
+      "keywords": ["partner profile", "we20", "edi_dc40", "status 56"]
+    },
+    {
+      "id": "UNKNOWN",
+      "sector": "unknown",
+      "healable": false,
+      "typical_segment": null,
+      "typical_field": null,
+      "keywords": []
+    }
+  ]
+}

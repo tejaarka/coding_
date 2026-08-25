@@ -19,6 +19,6 @@ Study materials for onboarding onto the TCS AI AXIS / Electrolux POCs (**IDoc** 
 | Lab | Topic | Goal |
 | --- | --- | --- |
 | [Day 03 — SAP IDoc Fundamentals](day03-idoc-fundamentals/) | IDoc envelope, segments, sample XML | Explain IDoc in 3 sentences; find the field to patch |
-| *(next)* IDoc agent orchestrator lab | Poll → classify → resolve → HITL → post | Mock the Electrolux IDoc workflow |
+| [Mock IDoc self-heal](idoc_selfheal_mock/) | Guided project: mock SAP APIs + agents + HITL | You fill TODOs; ask for review per step |
 
 Day 3 guide: [`day03-idoc-fundamentals/STUDY_GUIDE.md`](day03-idoc-fundamentals/STUDY_GUIDE.md)

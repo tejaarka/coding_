@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEBMAS06>
+  <IDOC BEGIN="1">
+    <EDI_DC40 SEGMENT="1">
+      <DOCNUM>0000000555000001</DOCNUM>
+      <STATUS>53</STATUS>
+      <DIRECT>2</DIRECT>
+      <IDOCTYP>DEBMAS06</IDOCTYP>
+      <MESTYP>DEBMAS</MESTYP>
+      <SNDPRN>ELECTROLUX_EU</SNDPRN>
+      <RCVPRN>ELECTROLUX_US</RCVPRN>
+    </EDI_DC40>
+    <E1KNA1M SEGMENT="1">
+      <MSGFN>009</MSGFN>
+      <KUNNR>0006000521</KUNNR>
+      <KTOKD>ZICC</KTOKD>
+      <LAND1>US</LAND1>
+      <NAME1>Electrolux US Intercompany Customer</NAME1>
+    </E1KNA1M>
+    <E1KNB1M SEGMENT="1">
+      <MSGFN>009</MSGFN>
+      <BUKRS>US01</BUKRS>
+    </E1KNB1M>
+    <E1KNVVM SEGMENT="1">
+      <MSGFN>009</MSGFN>
+      <VKORG>US00</VKORG>
+      <VTWEG>01</VTWEG>
+      <SPART>01</SPART>
+    </E1KNVVM>
+  </IDOC>
+</DEBMAS06>
